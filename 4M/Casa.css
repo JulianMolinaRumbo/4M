@@ -499,7 +499,8 @@ body {
 .sidenav {
   height: 100%;
   width: 0;
-  position: fixed;
+  position: absolute;
+  align-items: flex-start;
   z-index: 1;
   top: 0;
   right: 0;
@@ -533,6 +534,8 @@ body {
 #main {
   transition: margin-right .5s;
   padding: 16px;
+  right: 30px;
+  
 }
 
 @media screen and (max-height: 450px) {

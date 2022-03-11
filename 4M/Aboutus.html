@@ -2,6 +2,7 @@
 <html style="font-size: 16px;">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="keywords" content="INTUITIVE">
     <meta name="description" content="">
@@ -21,6 +22,34 @@
   </head>
   <body class="u-body u-xl-mode">
     <section class="u-clearfix u-section-1" id="sec-8bdc" data-image-width="1600" data-image-height="900">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Pariclin</a>
+        <a href="#">Master Clean 4U</a>
+        <a href="#">Paricoach</a>
+        <a href="#">Green Field</a>
+        <a href="#">Markeman</a>
+      </div>
+      
+      
+      <div style="float: right;">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="./images/PNG/OPTIONS.gif" width="80" height="100"></span>
+      </div>
+      
+      
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginRight = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginRight = "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
     <a href="Casa.html" class="u-image u-logo u-image-1">
       <img src="../4M/images/PNG/4M.gif" width="120px" height="120px">
     </a>
