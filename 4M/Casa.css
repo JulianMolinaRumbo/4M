@@ -502,7 +502,7 @@ body {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: rgb(255, 255, 255);
   overflow-x: hidden;
   transition: 0.5s;
@@ -527,11 +527,11 @@ body {
   top: 0;
   right: 25px;
   font-size: 36px;
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: margin-right .5s;
   padding: 16px;
 }
 
