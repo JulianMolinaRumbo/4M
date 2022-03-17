@@ -17,7 +17,7 @@
 }
  .u-section-3 {
   background-color: #E5007C;
-  min-height: 300px;
+  min-height: 550px;
 }
 
 footer {
@@ -25,6 +25,9 @@ footer {
     padding: 10px 5px;
     background-image: url("../4M/images/FONDOS/fondo-general.jpg");
     color: #fff;
+}
+.logo{
+  text-align: center;
 }
 
 .u-section-1 .u-layout-wrap-1 {

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="INTUITIVE">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="home.css" media="screen">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+  </head>
+  <body class="u-body u-xl-mode">
+    <section class="u-clearfix u-section-1" id="sec-8bdc" data-image-width="1600" data-image-height="900">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Pariclin</a>
+        <a href="#">Master Clean 4U</a>
+        <a href="#">Paricoach</a>
+        <a href="#">Green Field</a>
+        <a href="#">Markeman</a>
+      </div>
+      
+      
+      <div style="float: right;">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="./images/PNG/OPTIONS.gif" width="80" height="100"></span>
+      </div>
+      
+      
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "1920px";
+          document.getElementById("main").style.marginRight = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginRight = "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+    <a href="Casa.html" class="u-image u-logo u-image-1">
+      <img src="../4M/images/PNG/4M.gif" width="120px" height="120px">
+    </a>
+    <br>
+    <br>
+    <br>
+    <div>
+      <ul>
+        <li><a href="/Info.html">Info</a></li>
+        <li><a href="/Project.html">Proyects</a></li>
+        <li><a href="/Aboutus.html">We are</a></li>
+        <li><a href="/Services.html">We Do</a></li>
+        <li><a href="/Contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <br>
+    <div >
+    <img src="./images/PNG/LOGO-BLANCO-4M.png" alt="">
+    </div>
+    <div class="bs-example">
+      <!-- Button HTML (to Trigger Modal) -->
+      <a href="#myModal" class="btn btn-primary btn-lg" data-toggle="modal">REEL</a>
+    
+      <!-- Modal HTML -->
+      <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">YouTube Video</h5>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe id="cartoonVideo" class="embed-responsive-item" width="560" height="315"
+                  src="//www.youtube.com/embed/YE7VzlLtp-4" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+          /* Get iframe src attribute value i.e. YouTube video url
+          and store it in a variable */
+          var url = $("#cartoonVideo").attr('src');
+
+          /* Assign empty url value to the iframe src attribute when
+          modal hide, which stop the video playing */
+          $("#myModal").on('hide.bs.modal', function () {
+            $("#cartoonVideo").attr('src', '');
+          });
+
+          /* Assign the initially stored url back to the iframe src
+          attribute when modal is displayed again */
+          $("#myModal").on('show.bs.modal', function () {
+            $("#cartoonVideo").attr('src', url);
+          });
+        });
+    </script>
+    </section>
+    <section class="u-align-center u-clearfix u-image u-shading u-section-2" src="" data-image-width="256" data-image-height="256" id="sec-bc52">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        
+        <div >
+          <img class="gusano" src="../4M/images/GIFS/BG secciones-12 home 2.gif" alt=""><h6 class="u-text-5">We are a mkt digital agency and publicity in Mexico with the aim of providing you with innovative
+            and functional solutions.</h6>
+        </div>
+        
+      </div>
+      </section>
+      <section class="u-align-center u-clearfix u-image u-shading u-section-3" src="" data-image-width="256"
+        data-image-height="256" id="sec-bc52">
+        <div><h6 class="u-text-10">Just look</h6></div>
+      <div class="embed-container">
+        <iframe src="https://www.youtube.com/embed/9d8wWcJLnFI" frameborder="0" allowfullscreen></iframe>
+      </div>
+        <br>
+        <br>
+        <br>
+        </section>
+        <section class="u-align-center u-clearfix u-image u-shading u-section-4" src="" data-image-width="256"
+          data-image-height="256" id="sec-bc52">
+        <div>
+          <h1 class="u-text-10"><b>OUR</b></h1>
+          <h1 class="u-text-11"><b>VISION</b></h1>
+        </div>
+        <div>
+          <h3>Transcend with our disruptive</h3>
+          <h3>services being a world-class</h3>
+          <h3>agency and generate a legacy</h3>
+        </div>
+        <div>
+          <img src="./images/recursos.png" alt="">
+        </div>
+        <div class="u-aling-left">
+          <!-- <div style="text-align: left;"><img src="./images/Recurso 3.png" alt="" width="450" height="250" class="u-dragon"> -->
+          <table width="1350" border="0">
+            <tbody>
+              <tr>
+                <td><img src="./images/Recurso 3.png" alt="" width="550" height="250" class="u-dragon" </td>
+                <td align="justify" style="margin: 60px;">
+                  <h4 class="u-text-12">MAKE THEM MORE ECONOMIC, ACCESSIBLE AND SIMPLE.</h4>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        
+          <!-- <h4 class="u-text-12" vertical-aling="middle">MAKE THEM MORE ECONOMIC, ACCESSIBLE AND SIMPLE.</h4> -->
+        </div>
+          <br>
+          <br>
+          <br>
+          </section>
+      <section class="u-section-5">
+      <br>
+      <div><img src="./images/PNG/isologo-blanco.png" alt="" width="400" aling="center"></div>
+      <br><br><br>
+      <div style="text-align:center;">
+        <div class="logo"><img src="./images/iconos/1x/Recurso 14.png" alt="" width="1500" height="350" aling="center"></div>
+      
+      </div>
+      <br>
+      <br>
+      </section>
+  </body>
+</html>

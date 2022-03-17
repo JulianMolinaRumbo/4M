@@ -20,6 +20,14 @@
   min-height: 1023px;
 }
 
+ .u-section-4 {
+  background-color:#E6007C;
+  min-height: 550px;
+}
+.logo{
+  text-align: center;
+}
+
 #padre{
   text-align:center;
     
@@ -76,13 +84,15 @@
   margin: 20px 150px 0;
   float: left;
 	line-height: 25px;
-  color: black;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
 }
 .u-section-2 .u-text-6 {
-  margin: 20px 0 0;
-  float: right;
+  margin: 20px 150px 0;
+  float: left;
 	line-height: 25px;
-  color: black;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
 }
 .u-section-3 .u-text-1 {
   margin: 20px 0 0;
@@ -125,6 +135,24 @@
   color: rgb(0, 0, 0);
   font-size: 12px;
   font-weight:bold;
+}
+.u-section-4 .u-text-7 {
+  margin: 20px 0 0;
+  color: rgb(3, 3, 3);
+  font-size: 10px; 
+  text-align: left; 
+}
+.u-section-4 .u-text-8 {
+  margin: 20px 0 0;
+  color: rgb(3, 3, 3);
+  font-size: 10px;
+  text-align: left; 
+}
+.u-section-4 .u-text-9 {
+  margin: 20px 0 0;
+  color: rgb(3, 3, 3);
+  font-size: 10px;
+  text-align: left; 
 }
 
 @media (max-width: 1199px) {

@@ -20,6 +20,11 @@
   background-position: 50% 50%;
   min-height: 1023px;
 }
+
+ .u-section-4 {
+  background-color: #E6007C;
+  min-height: 550px;
+}
 footer {
     display: flex;
     padding: 10px 5px;
@@ -130,24 +135,24 @@ section.awSlider > img{
   margin: 20px 0 0;
   text-align: justify;
   color: rgb(255, 255, 255);
-  font-size: 90px;
+  font-size: 30px;
 }
 .u-section-2 .u-text-7 {
   margin: 20px 0 0;
   text-align: left;
-  color: rgb(0, 0, 0);
-  font-size: 10px; 
+  color: rgb(255, 255, 255);
+  font-size: 70px; 
 }
 .u-section-2 .u-text-8 {
   margin: 20px 0 0;
-  color: rgb(0, 0, 0);
-  font-size: 10px; 
+  color: rgb(255, 255, 255);
+  font-size: 40px; 
   text-align: left; 
 }
 .u-section-2 .u-text-9 {
   margin: 20px 0 0;
-  color: rgb(0, 0, 0);
-  font-size: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
   text-align: left; 
 }
 .u-section-2 .u-text-10 {
@@ -172,14 +177,39 @@ section.awSlider > img{
   margin: 20px 0 0;
   text-align: left;
   color: rgb(252, 252, 252);
-  font-size: 30px; 
+  font-size: 50px; 
 }
 .u-section-3 .u-text-5 {
   margin: 20px 0 0;
   text-align: justify;
   color: rgb(255, 255, 255);
-  font-size: 90px;
+  font-size: 50px;
 }
+.u-section-4 .u-text-15 {
+  margin: 20px 0 0;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+.u-section-4 .u-text-16 {
+  margin: 20px 0 0;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.contenedor{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.conte{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
 @media (max-width: 1199px) {
   .u-section-1 .u-sheet-1 {
     min-height: 430px;
