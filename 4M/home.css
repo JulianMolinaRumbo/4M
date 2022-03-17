@@ -7,7 +7,7 @@
   min-height: 500px;
 }
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/FONDOS/Sin-titulo-1.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("./images/FONDOS/Sin-título-1.jpg");
   background-position: 50% 50%;
   background-size: contain;
   -moz-background-size: cover;
