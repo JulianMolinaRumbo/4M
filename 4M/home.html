@@ -30,13 +30,23 @@
             $("#carousel_6953").addClass("u-section-" + (Math.floor(Math.random() * (3)) + 1));
           });
         </script>
+				<!-- Menu -->
       <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Pariclin</a>
-        <a href="#">Master Clean 4U</a>
-        <a href="#">Paricoach</a>
-        <a href="#">Green Field</a>
-        <a href="#">Markeman</a>
+				<div class="nav-action-container">
+        	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        	<a href="#" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="pariclin-menu-image">Pariclin</a>
+        	<a href="#" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="mc4u-menu-image">Master Clean 4U</a>
+        	<a href="#" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="paricoach-menu-image">Paricoach</a>
+        	<a href="#" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="greenfield-menu-image">Green Field</a>
+        	<a href="#" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="markeman-menu-image">Markeman</a>
+				</div>
+				<div class="nav-image-container">
+					<img id="pariclin-menu-image" src="./images/PARICLIN/foto-01-pariclin.jpg" class="menu-image" />
+					<img id="mc4u-menu-image" src="./images/MASTERCLEAN 4U\FOTO-02-MASTERCLEAN.jpg" class="menu-image"/>
+					<img id="paricoach-menu-image" src="./images/Paricoach/Recurso 1.png" class="menu-image"/>
+					<img id="greenfield-menu-image" src="./images/GREEN FIELD/FOTO-01-GREEN-FIELD.jpg" class="menu-image"/>
+					<img id="markeman-menu-image" src="./images/markeman/foto-01-markesitas.jpg" class="menu-image"/>
+				</div>
       </div>
       
       
@@ -46,15 +56,26 @@
       
       
       <script>
+				function toggleImage(event){
+					var element = document.getElementById(event.name);
+					element.classList.toggle("show-image");
+				}
+				// $(document).ready(function () {
+    		// 	$(".show-image").hover(function () {
+      	// 		console.log("This is hovering over")
+    		// 	});
+  			// });
+				// This toggles the images showing up in the menu.
+				
         function openNav() {
-          document.getElementById("mySidenav").style.width = "1920px";
+          document.getElementById("mySidenav").style.width = "80%";
           document.getElementById("main").style.marginRight = "250px";
           document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
         }
 
         function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
-          document.getElementById("main").style.marginRight = "0";
+          // document.getElementById("main").style.marginRight = "0";
           document.body.style.backgroundColor = "white";
         }
       </script>
@@ -67,16 +88,14 @@
     <div>
       <ul>
         <li><a href="/Info.html">Info</a></li>
-        <li><a href="/Project.html">Proyects</a></li>
+        <li><a href="/Project.html">Projects</a></li>
         <li><a href="/Aboutus.html">We are</a></li>
         <li><a href="/Services.html">We Do</a></li>
         <li><a href="/Contact.html">Contact</a></li>
       </ul>
     </div>
     <br>
-    <div >
     <img src="./images/PNG/LOGO-BLANCO-4M.png" alt="">
-    </div>
     <div>
       <img class="u-image u-image-circle u-image-4" src="./images/FACEBOOK.gif" alt="" data-image-width="309"
         data-image-height="315">
@@ -85,9 +104,11 @@
       <img class="u-image u-image-circle u-image-6" src="./images/WATSAP.gif" alt="" data-image-width="309"
         data-image-height="315">
     </div>
+		<div class="align-reel-button">
 		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reelVideo">
-  	REEL
+  		REEL
 		</button>
+		</div>
   
 		<div class="modal fade" id="reelVideo" tabindex="-1" aria-hidden="true">
   		<div class="modal-dialog modal-lg">
