@@ -55,6 +55,8 @@ section.awSlider{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 800px;
+  height: 800px;
 }
 
 section.awSlider:hover > img{
