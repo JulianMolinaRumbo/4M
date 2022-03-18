@@ -16,6 +16,26 @@
   min-height: 1023px;
   height: 1023px;
 }
+.u-section-2 {
+  background-image: url("images/FONDOS/FONDO-02.jpg");
+  background-position: 50% 50%;
+  background-size: contain;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  min-height: 1023px;
+  height: 1023px;
+}
+.u-section-3 {
+  background-image: url("images/FONDOS/Recurso1.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  min-height: 1023px;
+  height: 1023px;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -36,38 +56,38 @@ li a:hover {
   background-color: rgba(85, 85, 85, 0);
   color: white;
 }
- .u-section-2 {
+ .u-section-4 {
   background-image: url("./images/FONDOS/JUST-LOOK.jpg");
   min-height: 1023px;
 }
-.u-section-2 .gusano{
+.u-section-4 .gusano{
   margin: 250px 0 0 0;
   float: left;
   text-align: left;
   opacity: 1;
 }
-.u-section-3 {
+.u-section-5 {
   background-color: #000000;
   min-height: 1023px;
 }
-.u-section-4 {
+.u-section-6 {
   background-color: #FFA840;
   min-height: 1023px;
 }
-.u-section-4 .u-text-10{
+.u-section-6 .u-text-10{
   font-size: 150px;
 }
-.u-section-4 .u-text-11{
+.u-section-6 .u-text-11{
   font-size: 100px;
 }
-.u-section-4 .u-text-12{
+.u-section-6 .u-text-12{
 position: relative;
 text-align: center;
 vertical-align: initial;
 font-size: 40px;
 
 }
-.u-section-5 {
+.u-section-7 {
   background-color: #E6007C;
   min-height: 1023px;
 }
@@ -122,37 +142,37 @@ font-size: 40px;
   color: aliceblue;
   font-size: 30px; 
 }
-.u-section-2 .u-text-5 {
+.u-section-4 .u-text-5 {
   margin: 20px 0 0;
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 40px;
 }
-.u-section-2 .u-text-6 {
+.u-section-4 .u-text-6 {
   margin: 20px 0 0;
   text-align: left;
   color: rgb(255, 255, 255);
   font-size: 40px; 
 }
-.u-section-2 .u-text-7 {
+.u-section-4 .u-text-7 {
   margin: 20px 0 0;
   color: rgb(3, 3, 3);
   font-size: 10px; 
   text-align: left; 
 }
-.u-section-2 .u-text-8 {
+.u-section-4 .u-text-8 {
   margin: 20px 0 0;
   color: rgb(3, 3, 3);
   font-size: 10px;
   text-align: left; 
 }
-.u-section-2 .u-text-9 {
+.u-section-4 .u-text-9 {
   margin: 20px 0 0;
   color: rgb(3, 3, 3);
   font-size: 10px;
   text-align: left; 
 }
-.u-section-3 .u-text-10 {
+.u-section-5 .u-text-10 {
   margin: 250px 0 0;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -167,17 +187,17 @@ font-size: 40px;
     min-height: 330px;
     
   }
- .u-section-2 .u-image-2 {
+ .u-section-4 .u-image-2 {
     min-height: 330px;
     object-fit: cover;
   }
-   .u-section-2 .u-image-3 {
+   .u-section-4 .u-image-3 {
     min-height: 330px;
     margin: -181px 0 0 auto;
     object-fit: contain;
     
   }
-  .u-section-2 .u-image-4 {
+  .u-section-4 .u-image-4 {
     width:20px;
     height:40px;
     
@@ -231,21 +251,21 @@ font-size: 40px;
     min-height: 239px;
   }
 
-.u-section-2 .u-sheet-1 {
+.u-section-4 .u-sheet-1 {
   min-height: 800px;
 }
 
-.u-section-2 .u-text-1 {
+.u-section-4 .u-text-1 {
   font-size: 6rem;
   font-weight: 700;
   margin: 60px auto 0;
 }
 
-.u-section-2 .u-text-2 {
+.u-section-4 .u-text-2 {
   margin: 30px auto 0;
 }
 
-.u-section-2 .u-btn-1 {
+.u-section-4 .u-btn-1 {
   background-image: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -253,29 +273,29 @@ font-size: 40px;
 }
 
 @media (max-width: 1199px) {
-  .u-section-2 .u-sheet-1 {
+  .u-section-4 .u-sheet-1 {
     min-height: 660px;
   }
 }
 
 @media (max-width: 991px) {
-  .u-section-2 .u-sheet-1 {
+  .u-section-4 .u-sheet-1 {
     min-height: 506px;
   }
 }
 
 @media (max-width: 767px) {
-  .u-section-2 .u-sheet-1 {
+  .u-section-4 .u-sheet-1 {
     min-height: 380px;
   }
 }
 
 @media (max-width: 575px) {
-  .u-section-2 .u-sheet-1 {
+  .u-section-4 .u-sheet-1 {
     min-height: 239px;
   }
 
-  .u-section-2 .u-text-1 {
+  .u-section-4 .u-text-1 {
     font-size: 3.75rem;
   }
 }
