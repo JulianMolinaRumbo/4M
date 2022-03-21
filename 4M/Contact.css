@@ -238,6 +238,7 @@ body {
 .sidenav {
   height: 100%;
   width: 0;
+	display: flex;
   position: absolute;
   align-items: flex-start;
   z-index: 1;
@@ -247,10 +248,11 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  /* padding: 8px 8px 8px 32px; */
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -258,9 +260,21 @@ body {
   transition: 0.3s;
 }
 
+/* .align-reel-button{
+	padding: 20px;
+} */
+
 .sidenav a:hover {
   color: #000000;
 }
+
+.hovering{
+	border: 20px solid red;
+}
+/* .sidenav a:hover::after{
+	content: url("https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg");
+	display: block;
+} */
 
 .sidenav .closebtn {
   position: absolute;
@@ -268,6 +282,33 @@ body {
   right: 25px;
   font-size: 36px;
   margin-right: 50px;
+}
+
+.nav-action-container{
+	height: 100%;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.nav-image-container{
+	height: 100%;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.show-image{
+	display: block !important;
+}
+
+.menu-image{
+	height: 70%;
+	width: 70%;
+	display: none;
 }
 
 #main {

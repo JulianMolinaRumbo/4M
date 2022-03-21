@@ -21,34 +21,60 @@
   </head>
   <body class="u-body u-xl-mode">
     <section class="u-clearfix u-section-1" id="sec-8bdc" data-image-width="1600" data-image-height="900">
-      <div id="mySidenav" class="sidenav">
+     <div id="mySidenav" class="sidenav">
+      <div class="nav-action-container">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Pariclin</a>
-        <a href="#">Master Clean 4U</a>
-        <a href="#">Paricoach</a>
-        <a href="#">Green Field</a>
-        <a href="#">Markeman</a>
+        <a href="#" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)"
+          name="pariclin-menu-image">Pariclin</a>
+        <a href="#" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)"
+          name="mc4u-menu-image">Master Clean 4U</a>
+        <a href="#" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)"
+          name="paricoach-menu-image">Paricoach</a>
+        <a href="#" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)"
+          name="greenfield-menu-image">Green Field</a>
+        <a href="#" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)"
+          name="markeman-menu-image">Markeman</a>
       </div>
-      
-      
-      <div style="float: right;">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="./images/PNG/OPTIONS.gif" width="80" height="100"></span>
+      <div class="nav-image-container">
+        <img id="pariclin-menu-image" src="./images/PNG/Recurso 11.png" class="menu-image" />
+        <img id="mc4u-menu-image" src="./images/PNG/Recurso 12.png" class="menu-image" />
+        <img id="paricoach-menu-image" src="./images/PNG/Recurso 14.png" class="menu-image" />
+        <img id="greenfield-menu-image" src="./images/PNG/Recurso 17.png" class="menu-image" />
+        <img id="markeman-menu-image" src="./images/PNG/Recurso 24.png" class="menu-image" />
       </div>
-      
-      
-      <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "1920px";
-          document.getElementById("main").style.marginRight = "250px";
-          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
+    </div>
+    
+    
+    <div style="float: right;">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="./images/PNG/OPTIONS.gif" width="80"
+          height="100"></span>
+    </div>
+    
+    
+    <script>
+      function toggleImage(event) {
+        var element = document.getElementById(event.name);
+        element.classList.toggle("show-image");
+      }
+      // $(document).ready(function () {
+      // 	$(".show-image").hover(function () {
+      // 		console.log("This is hovering over")
+      // 	});
+      // });
+      // This toggles the images showing up in the menu.
 
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-          document.getElementById("main").style.marginRight = "0";
-          document.body.style.backgroundColor = "white";
-        }
-      </script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "80%";
+        document.getElementById("main").style.marginRight = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        // document.getElementById("main").style.marginRight = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
     <a href="Casa.html" class="u-image u-logo u-image-1">
       <img src="../4M/images/PNG/4M.gif" width="120px" height="120px">
     </a>

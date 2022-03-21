@@ -381,7 +381,7 @@ body {
 
 .nav-image-container{
 	height: 100%;
-	width: 70%;
+	width: 80%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -392,8 +392,8 @@ body {
 }
 
 .menu-image{
-	height: 50%;
-	width: 50%;
+	height: 70%;
+	width: 70%;
 	display: none;
 }
 
