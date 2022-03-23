@@ -7,7 +7,7 @@
   min-height: 500px;
 }
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("./images/FONDOS/Sin-título-1.jpg");
+  /* background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("./images/FONDOS/Sin-título-1.jpg"); */
   background-position: 50% 50%;
   background-size: contain;
   -moz-background-size: cover;
@@ -17,7 +17,7 @@
   height: 1023px;
 }
 .u-section-2 {
-  background-image: url("images/FONDOS/FONDO-02.jpg");
+  /* background-image: url("images/FONDOS/FONDO-02.jpg"); */
   background-position: 50% 50%;
   background-size: contain;
   -moz-background-size: cover;
@@ -27,7 +27,7 @@
   height: 1023px;
 }
 .u-section-3 {
-  background-image: url("images/FONDOS/Recurso1.png");
+  /* background-image: url("images/FONDOS/Recurso1.png"); */
   background-position: 50% 50%;
   background-size: contain;
   -moz-background-size: cover;
