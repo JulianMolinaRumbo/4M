@@ -16,6 +16,9 @@
   min-height: 1023px;
   height: 1023px;
 }
+#h {
+  background-position: right 0 bottom;
+}
 .u-section-2 {
   /* background-image: url("images/FONDOS/FONDO-02.jpg"); */
   background-position: 50% 50%;
