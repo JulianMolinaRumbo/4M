@@ -26,9 +26,6 @@ footer {
     background-image: url("../4M/images/FONDOS/fondo-general.jpg");
     color: #fff;
 }
-.logo{
-  text-align: center;
-}
 
 .u-section-1 .u-layout-wrap-1 {
   margin-top: 60px;
@@ -83,15 +80,15 @@ footer {
 }
 .u-section-2 .u-text-6 {
   margin: 20px 0 0;
-  text-align: justify;
-  color: rgb(0, 0, 0);
-  font-size: 40px;
-}
-.u-section-2 .u-text-7 {
-  margin: 20px 0 0;
   text-align: left;
   color: rgb(0, 0, 0);
-  font-size: 10px; 
+  font-size: 30px;
+}
+.u-section-2 .u-text-7 {
+  margin: 0 0 0;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  font-size: 30px; 
 }
 .u-section-2 .u-text-8 {
   margin: 20px 0 0;
@@ -281,33 +278,7 @@ footer {
   }
 }
 }
-.carousel {
-  position: relative;
-}
-.carousel-item img {
-  object-fit: cover;
-}
-#carousel-thumbs {
-  background: rgba(255,255,255,.3);
-  bottom: 0;
-  left: 0;
-  padding: 0 50px;
-  right: 0;
-}
-#carousel-thumbs img {
-  border: 5px solid transparent;
-  cursor: pointer;
-}
-#carousel-thumbs img:hover {
-  border-color: rgba(255,255,255,.3);
-}
-#carousel-thumbs .selected img {
-  border-color: #fff;
-}
-.carousel-control-prev,
-.carousel-control-next {
-  width: 50px;
-}
+
 @media all and (max-width: 767px) {
   .carousel-container #carousel-thumbs img {
     border-width: 3px;
@@ -341,4 +312,95 @@ footer {
 
 #myBtn:hover {
   background-color: rgba(85, 85, 85, 0);
+}
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
