@@ -6,6 +6,7 @@
 .u-section-1 .u-sheet-1 {
   min-height: 500px;
 }
+
  .u-section-1 {
   background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../4M/images/FONDOS/WE-DO.jpg");
   background-position: 50% 50%;
@@ -384,83 +385,48 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
-.accordion1 {
-  background-color: #00B5BC;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-  
+.button-wrapper {
+	display: flex;
 }
-.accordion2 {
-  background-color: #FFDE41;
+
+.accordion-button{
   color: #ffffff;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 7%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-  
-}
-.accordion3 {
-  background-color: #FF8E41;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-  
-}
-.accordion4 {
-  background-color: #DE00BC;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-.accordion5 {
-  background-color: #5C009E;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-.accordion6 {
-  background-color: #009E71;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+  font-size: 25px;
   transition: 0.4s;
 }
 
-.active, .accordion1:hover {
+
+.align-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+}
+
+.rotate-content{
+transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.slide-menu-image{
+	height: 75px;
+	width: 75px;
+	/* height: 15px; */
+}
+
+
+.active, .accordion-button:hover {
   background-color: #ccc;
 }
 .active, .accordion2:hover {
@@ -520,14 +486,15 @@ body {
   float: right;
   margin-left: 5px;
 }
-.active:after {
+/* .active:after {
   content: "\2212";
-}
+} */
 .panel {
-  padding: 0 18px;
   display: none;
   background-color: white;
+	color: black;
   overflow: hidden;
+	margin-bottom: 0px !important;
 }
 #myBtn {
   display: none;
