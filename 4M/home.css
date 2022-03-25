@@ -403,7 +403,7 @@ body {
     position: absolute;
     top:0;
     left: 0;
-    margin: 250px 450px 350px 450px;
+    margin: 350px 450px 350px 450px;
     width: 50%;
     height: 50%;
 }
@@ -411,7 +411,7 @@ body {
     	margin: 20px;
     }
     .modal-dialog iframe{
-        margin: 0 auto;
+        margin: 350 auto;
         display: block;
     }
 
@@ -425,7 +425,7 @@ body {
   border: none;
   outline: none;
   background-color: rgba(255, 0, 0, 0);
-  color: white;
+  color: rgba(255, 255, 255, 0);
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
