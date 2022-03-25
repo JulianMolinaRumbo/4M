@@ -375,6 +375,26 @@ body {
 	display: none;
 }
 
+.modal{
+	overflow: hidden !important;
+}
+
+.modal-dialog {
+  height: 100vh !important;
+  display: flex;
+	overflow: hidden !important;
+}
+
+.modal-content {
+  margin: auto !important;
+  /* height: fit-content !important; */
+}
+
+
+.reel-modal{
+	background-color: transparent !important;
+}
+
 
 #main {
   transition: margin-right .5s;
