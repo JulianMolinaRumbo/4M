@@ -35,7 +35,7 @@
 							element.classList.add("show-image");
               document.addEventListener("mousemove", parallax);
               function parallax(e) {
-                this.querySelectorAll('.guerrero-toggle').forEach(guerrerotoggle => {
+                this.querySelectorAll('#guerrero-toggle').forEach(guerrerotoggle => {
                   const speed = guerrerotoggle.getAttribute('data-speed')
                   const x = (window.innerWidth - e.pageX * speed) / 100
                   const y = (window.innerWidth - e.pageY * speed) / 100
@@ -153,9 +153,9 @@
 				</div>
 
         <div STYLE="position:absolute; top:-10px; left:1050px; visibility:visible; z-index:-1;">
-          <img id="guerrero-toggle" class="hide-image" src="./images/PNG/GUERRERO-MAYA.png" alt="" >
+          <img id="guerrero-toggle" data-speed="2" class="hide-image" src="./images/PNG/GUERRERO-MAYA.png" alt="" >
         </div>
-        <script>
+        <!-- <script>
           (function () {
               // Add event listener
               document.addEventListener("mousemove", parallax);
@@ -174,7 +174,7 @@
               }
 
             })();
-        </script>
+        </script> -->
     </section>
     <section class="u-align-center u-clearfix u-image u-shading u-section-4" src="" data-image-width="256" data-image-height="256" id="sec-bc52">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
