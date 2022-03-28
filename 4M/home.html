@@ -33,8 +33,29 @@
 							document.getElementsByTagName('body')[0].style.backgroundImage = "url('" + image + "')";
 							var element = document.getElementById('guerrero-toggle');
 							element.classList.add("show-image");
+              document.addEventListener("mousemove", parallax);
+              function parallax(e) {
+                this.querySelectorAll('.guerrero-toggle').forEach(guerrerotoggle => {
+                  const speed = guerrerotoggle.getAttribute('data-speed')
+                  const x = (window.innerWidth - e.pageX * speed) / 100
+                  const y = (window.innerWidth - e.pageY * speed) / 100
+
+                  guerrerotoggle.style.transform = 'translateX(${x}px) translateY(${y}px)'
+                });
+              }
+              
 						}else{
             	document.getElementsByTagName('body')[0].style.backgroundImage = "url('" + image + "')";
+              document.addEventListener("mousemove", parallax);
+              function parallax(e) {
+                this.querySelectorAll('.M').forEach(M => {
+                  const speed = M.getAttribute('data-speed')
+                  const x = (window.innerWidth - e.pageX * speed) / 100
+                  const y = (window.innerWidth - e.pageY * speed) / 100
+
+                  M.style.transform = 'translateX(${x}px) translateY(${y}px)'
+                });
+              }
 						}
             document.getElementsByTagName('body')[0].style.backgroundRepeat = "no-repeat";
             document.getElementsByTagName('body')[0].style.backgroundSize = "1920px 1023px";
@@ -108,8 +129,9 @@
       <br>
         <div STYLE="position:relative; top:40px; left:0px; z-index:-1;">
         <!-- <div STYLE="position:absolute; top:36px; left:240px; visibility:visible; z-index:2;"> -->
-        <img src="./images/PNG/LOGO-BLANCO-4M.png" alt="">
+        <img src="./images/PNG/LOGO-BLANCO-4M.png" alt="" id="4M" data-speed="2" class="M">
         </div>
+        
         <div STYLE="position:absolute; top:400px; left:1840px; visibility:visible; z-index:2;">
           <img class="u-image u-image-circle u-image-4" src="./images/FACEBOOK.gif" alt="" data-image-width="309"
           data-image-height="315">
@@ -130,9 +152,29 @@
   				</div> 
 				</div>
 
-        <div STYLE="position:absolute; top:-10px; left:1050px; visibility:visible; z-index:1;">
+        <div STYLE="position:absolute; top:-10px; left:1050px; visibility:visible; z-index:-1;">
           <img id="guerrero-toggle" class="hide-image" src="./images/PNG/GUERRERO-MAYA.png" alt="" >
         </div>
+        <script>
+          (function () {
+              // Add event listener
+              document.addEventListener("mousemove", parallax);
+              const elem = document.getElementById('guerrero-toggle');
+              // Magic happens here
+              function parallax(e) {
+                let _w = window.innerWidth / 2;
+                let _h = window.innerHeight / 2;
+                let _mouseX = e.clientX;
+                let _mouseY = e.clientY;
+                let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+
+                let x = `${_depth1}`;
+                console.log(x);
+                elem.style.backgroundPosition = x;
+              }
+
+            })();
+        </script>
     </section>
     <section class="u-align-center u-clearfix u-image u-shading u-section-4" src="" data-image-width="256" data-image-height="256" id="sec-bc52">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
