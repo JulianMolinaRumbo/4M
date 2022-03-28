@@ -29,7 +29,13 @@
           window.onload = function () {
             var images = ['./Images/FONDOS/Background/1.png', './Images/FONDOS/Background/2.png', './Images/FONDOS/Background/3.jpg'];
             var image = images[Math.floor(Math.random() * images.length)];
-            document.getElementsByTagName('body')[0].style.backgroundImage = "url('" + image + "')";
+						if(image === './Images/FONDOS/Background/1.png'){
+							document.getElementsByTagName('body')[0].style.backgroundImage = "url('" + image + "')";
+							var element = document.getElementById('guerrero-toggle');
+							element.classList.add("show-image");
+						}else{
+            	document.getElementsByTagName('body')[0].style.backgroundImage = "url('" + image + "')";
+						}
             document.getElementsByTagName('body')[0].style.backgroundRepeat = "no-repeat";
             document.getElementsByTagName('body')[0].style.backgroundSize = "1920px 1023px";
             document.getElementsByTagName('body')[0].style.backgroundPosition = "50% 50%";
@@ -125,7 +131,7 @@
 				</div>
 
         <div STYLE="position:absolute; top:-10px; left:1050px; visibility:visible; z-index:1;">
-          <img src="./images/PNG/GUERRERO-MAYA.png" alt="" >
+          <img id="guerrero-toggle" class="hide-image" src="./images/PNG/GUERRERO-MAYA.png" alt="" >
         </div>
     </section>
     <section class="u-align-center u-clearfix u-image u-shading u-section-4" src="" data-image-width="256" data-image-height="256" id="sec-bc52">
