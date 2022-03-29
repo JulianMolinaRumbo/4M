@@ -13,7 +13,8 @@
   min-height: 1023px;
 }
  .u-section-2 {
-  background-color:rebeccapurple;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../4M/images/FONDOS/WE-DO.jpg");
+  background-position: 50% 50%;
   min-height: 1023px;
 }
  .u-section-3 {
@@ -25,6 +26,7 @@
   background-color:#E6007C;
   min-height: 550px;
 }
+
 .logo{
   text-align: center;
 }
