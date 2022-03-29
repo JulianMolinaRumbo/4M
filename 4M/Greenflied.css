@@ -76,13 +76,14 @@ footer {
   margin: 20px 0 0;
   text-align: justify;
   color: rgb(0, 0, 0);
-  font-size: 30px; 
+  font-size: 48pt; 
+  font-weight: bolder;
 }
-.u-section-2 .u-text-6 {
+.u-section-1 .u-text-6 {
   margin: 20px 0 0;
-  text-align: left;
+  text-align: justify;
   color: rgb(0, 0, 0);
-  font-size: 30px;
+  font-size: 36pt;
 }
 .u-section-2 .u-text-7 {
   margin: 0 0 0;
