@@ -51,12 +51,13 @@ li a:hover {
 	opacity: 1;
 }
 .u-section-5 {
-	background-image: url("./images/FONDOS/estrellas.jpg");
+	background-image: url("./images/FONDOS/Azulestrellas.png");
 	background-position: 50% 50%;
 	min-height: 1050px;
 }
 .u-section-6 {
-	background-color: #ffa840;
+	background-image: url("./images/FONDOS/tierra.png");
+	background-position: 50% 50%;
 	min-height: 1023px;
 }
 .u-section-6 .u-text-10 {
@@ -72,8 +73,9 @@ li a:hover {
 	font-size: 40px;
 }
 .u-section-7 {
-	background-color: #e6007c;
-	min-height: 1023px;
+	background-image: url("./images/FONDOS/Azulestrellas.png");
+	background-position: 50% 50%;
+	min-height: 550px;
 }
 .u-section-1 .u-layout-wrap-1 {
 	margin-top: 60px;

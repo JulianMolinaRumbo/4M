@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/FONDOS/FOLLOW-US.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/FONDOS/tierra.png");
   background-position: 50% 50%;
   min-height: 1023px;
 }
@@ -45,30 +45,35 @@ src: url(TIPOGRAFIA/Montserrat-Bold.ttf) format(truetype);
   font-size: 60px;
   font-weight: bold;
   color: aliceblue;
+  text-align: left;
 }
 .u-section-1 .u-text-3 {
   margin: 10px 0 0;
   font-size: 60px;
   font-weight:bold;
   color: aliceblue;
+  text-align: left;
 }
 .u-section-1 .u-text-4 {
   margin: 10px 0 0;
   font-size: 60px;
   font-weight:bold;
   color: aliceblue;
+  text-align: left;
 }
 .u-section-1 .u-text-5 {
   margin: 10px 0 0;
   font-size: 60px; 
   font-weight:bold;
   color: aliceblue;
+  text-align: left;
 }
 .u-section-1 .u-text-6 {
   margin: 20px 0 0;
   text-align: center;
   color: aliceblue;
   font-size: 60px;
+  
 }
 
 
