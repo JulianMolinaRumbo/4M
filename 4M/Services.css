@@ -8,23 +8,25 @@
 }
 
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../4M/images/FONDOS/WE-DO.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../4M/images/FONDOS/WeDO.png");
   background-position: 50% 50%;
   min-height: 1023px;
 }
  .u-section-2 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../4M/images/FONDOS/WE-DO.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../4M/images/FONDOS/piramideastro.png");
   background-position: 50% 50%;
   min-height: 1023px;
 }
  .u-section-3 {
-  background-color:rebeccapurple;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../4M/images/FONDOS/auroestrella.png");
+  background-position: 50% 50%;
   min-height: 1023px;
 }
 
- .u-section-4 {
-  background-color:#E6007C;
-  min-height: 550px;
+.u-section-5 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../4M/images/FONDOS/auroestrella.png");
+  background-position: 50% 50%;
+  min-height: 2023px;
 }
 
 .logo{
@@ -83,14 +85,14 @@
   color: aliceblue;
   font-size: 30px; 
 }
-.u-section-2 .u-text-5 {
+.u-section-5 .u-text-5 {
   margin: 20px 150px 0;
   float: left;
 	line-height: 25px;
   color: rgb(255, 255, 255);
   font-size: 40px;
 }
-.u-section-2 .u-text-6 {
+.u-section-5 .u-text-6 {
   margin: 20px 150px 0;
   float: left;
 	line-height: 25px;
