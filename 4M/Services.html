@@ -82,16 +82,38 @@
       <br>
       <br>
       <br>
-      <marquee direction="down" width="1800" height="800" behavior="alternate" >
-        <marquee behavior="alternate">
-          <img src="./images/PNG/WE DO_1.png" alt="">
-        </marquee>
-      </marquee>
+      <div class="starwars-demo">
+      <!-- <marquee direction="down" width="1800" height="800" behavior="alternate" >
+        <marquee behavior="alternate"> -->
+          <img class="star" src="./images/PNG/WE DO_1.png" alt="">
+        <!-- </marquee>
+      </marquee> -->
+      </div>
       <div STYLE="position:absolute; top:900px; left:900px; z-index:1;">
         <marquee behavior="scroll" direction="down">
           <img src="./images/PNG/001-flechas-hacia-abajo.png" width="40" height="40" alt="Flying Bee">
         </marquee>
       </div>
+      <script>
+        var byline = document.getElementById('byline');   // Find the H2
+          bylineText = byline.innerHTML;                    // Get the content of the H2
+          bylineArr = bylineText.split('');                 // Split content into array
+          byline.innerHTML = '';                            // Empty current content
+
+          var span;         // Create variables to create elements
+          var letter;
+
+          for (i = 0; i < bylineArr.length; i++) {                  // Loop for every letter
+            span = document.createElement("span");          // Create a <span> element
+            letter = document.createTextNode(bylineArr[i]); // Create the letter
+            if (bylineArr[i] == ' ') {                       // If the letter is a space...
+              byline.appendChild(letter);         // ...Add the space without a span
+            } else {
+              span.appendChild(letter);           // Add the letter to the span
+              byline.appendChild(span);           // Add the span to the h2
+            }
+          }
+      </script>
     </section>
     <section class="u-align-center u-clearfix u-image u-shading u-section-2" src="" data-image-width="256" data-image-height="256" id="sec-bc52">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1" >
