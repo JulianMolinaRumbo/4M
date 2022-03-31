@@ -488,9 +488,6 @@ body {
   display: inline-block;
 }
 
-img {
-  width: 100%;
-}
 
 .star, .wars, .byline {
   position: absolute;
