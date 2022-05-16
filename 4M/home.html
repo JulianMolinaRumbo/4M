@@ -11,6 +11,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
     <link rel="stylesheet" href="home.css" media="screen">
+		<link rel="stylesheet" href="./styling/responsive/home_responsive.css" media="screen">
     <!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'> -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -18,59 +19,33 @@
 		<script src="./js/home.js"></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <meta name="theme-color" content="#478ac9">
+    <meta name="theme-color" content="#478ac9"> 
     <meta property="og:title" content="Home">
   </head>
-  <body class="u-body u-xl-mode">
-    <section class="u-align-center u-clearfix u-image u-shading u-section-1" id="sec-8bdc" data-image-width="256" data-image-height="256">
-      
+		<body>
+    <div id="section-1" class="first-section">
+			<!-- 4m logo at the top of the header -->
+			<div>
+ 				<a href="home.html" class="u-image u-logo u-image-1">
+        	<img class="header-logo" src="../4M/images/PNG/4M-Header-logo.png">
+				</a>
+			</div>
 
-        <script type="text/javascript">
-          window.onload = function () {
-            var images = ['./Images/FONDOS/Background/1.png', './Images/FONDOS/Background/2.png', './Images/FONDOS/Background/3.jpg'];
-            var image = images[Math.floor(Math.random() * images.length)];
-						if(image === './Images/FONDOS/Background/1.png'){
-							document.getElementsByTagName('body')[0].style.backgroundImage = "url('" + image + "')";
-							var element = document.getElementById('guerrero-toggle');
-							element.classList.add("show-image");
-              document.addEventListener("mousemove", parallax);
-              function parallax(e) {
-                this.querySelectorAll('#guerrero-toggle').forEach(guerrerotoggle => {
-                  const speed = guerrerotoggle.getAttribute('data-speed')
-                  const x = (window.innerWidth - e.pageX * speed) / 100
-                  const y = (window.innerWidth - e.pageY * speed) / 100
+			<!-- right side nav toggle. -->
+			<div class="menu-toggle">
+        <span onclick="openNav()"><img class="menu-toggle-image" src="./images/PNG/biblioteca.png"></span>
+      </div>
 
-                  guerrerotoggle.style.transform = `translateX(${x}px) translateY(${y}px)`
-                });
-              }
-              
-						}else{
-            	document.getElementsByTagName('body')[0].style.backgroundImage = "url('" + image + "')";
-              document.addEventListener("mousemove", parallax);
-              function parallax(e) {
-                this.querySelectorAll('.M').forEach(M => {
-                  const speed = M.getAttribute('data-speed')
-                  const x = (window.innerWidth - e.pageX * speed) / 100
-                  const y = (window.innerWidth - e.pageY * speed) / 100
-
-                  M.style.transform = `translateX(${x}px) translateY(${y}px)`
-                });
-              }
-						}
-            document.getElementsByTagName('body')[0].style.backgroundRepeat = "no-repeat";
-            document.getElementsByTagName('body')[0].style.backgroundSize = "1920px 1023px";
-            document.getElementsByTagName('body')[0].style.backgroundPosition = "50% 50%";
-          }
-        </script> 
+			
 				<!-- Menu -->
       <div id="mySidenav" class="sidenav">
 				<div class="nav-action-container">
         	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        	<a href="Pariclin.html" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="pariclin-menu-image">Pariclin</a>
-        	<a href="Masterclean4U.html" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="mc4u-menu-image">Master Clean 4U</a>
-        	<a href="Paricoach.html" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="paricoach-menu-image">Paricoach</a>
-        	<a href="Greenflied.html" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="greenfield-menu-image">Green Field</a>
-        	<a href="Markeman.html" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="markeman-menu-image">Markeman</a>
+        	<a target="_blank" href="Pariclin.html" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="pariclin-menu-image">Pariclin</a>
+        	<a target="_blank"href="Masterclean4U.html" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="mc4u-menu-image">Master Clean 4U</a>
+        	<a target="_blank" href="Paricoach.html" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="paricoach-menu-image">Paricoach</a>
+        	<a target="_blank" href="Greenflied.html" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="greenfield-menu-image">Green Field</a>
+        	<a target="_blank" href="Markeman.html" class="show-image" onmouseover="toggleImage(this)" onmouseleave="toggleImage(this)" name="markeman-menu-image">Markeman</a>
 				</div>
 				<div class="nav-image-container">
 					<img id="pariclin-menu-image" src="./images/PNG/Recurso 11.png" class="menu-image" />
@@ -80,44 +55,43 @@
 					<img id="markeman-menu-image" src="./images/PNG/Recurso 24.png" class="menu-image" />
 				</div>
       </div>
-      
-      
-      <div style="float: right;">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="./images/PNG/biblioteca.png" width="60" height="60"></span>
-      </div>
-      
-      
-      <script>
-				function toggleImage(event){
-					var element = document.getElementById(event.name);
-					element.classList.toggle("show-image");
-				}
-				// $(document).ready(function () {
-    		// 	$(".show-image").hover(function () {
-      	// 		console.log("This is hovering over")
-    		// 	});
-  			// });
-				// This toggles the images showing up in the menu.
-				
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "80%";
-          document.getElementById("main").style.marginRight = "250px";
-          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
 
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-          // document.getElementById("main").style.marginRight = "0";
-          document.body.style.backgroundColor = "white";
-        }
-      </script>
-        <a href="home.html" class="u-image u-logo u-image-1">
+			<!-- Logo de 4m central -->
+			<div class="central-logo-container">
+        <img src="./images/PNG/LOGO-BLANCO-4M.png" id="4M" data-speed="2" class="central-4m-logo">
+      </div>
+
+			<!-- On screen navigation menu -->
+      <div class="on-screen-navigation-wrapper">
+				<div class="on-screen-navigation">
+					<a href="./Info.html" class="on-screen-navigation-item">Info</a>
+					<a href="./Project.html" class="on-screen-navigation-item">Projects</a>
+					<a href="./Aboutus.html" class="on-screen-navigation-item">We are</a>
+					<a href="./Services.html" class="on-screen-navigation-item">We Do</a>
+					<a href="./Contact.html" class="on-screen-navigation-item">Contact</a>
+				</div>
+				
+				<div class="on-screen-social-media">
+          <a target="_blank" href="https://www.facebook.com/4MdeMexico/"><img class="on-screen-social-media-item" src="./images/FACEBOOK.gif"></a>
+          <a target="_blank" href="https://instagram.com/4mdemexico?utm_medium=copy_link"><img class="on-screen-social-media-item" src="./images/INSTAGRAM.gif" alt=""></a>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=5214422199679&text=Me%20interesa%20saber%20mas%20sobre%20sus%20productos%20y%20servicios"><img class="on-screen-social-media-item" src="./images/WATSAP.gif"></a>					
+				</div>
+
+				<div class="align-reel-button">
+		      <img class="reel-button"  data-bs-toggle="modal" data-bs-target="#reelVideo" src="./images/PNG/FLECHA-CONTINUAR.png"/>
+					<span class="reel-text">Reel</span>
+		    </div>
+        </div>
+				
+
+				<!-- SECTION 2 of the landing page -->
+        <!-- <a href="home.html" class="u-image u-logo u-image-1">
         <img src="../4M/images/PNG/4M.gif" width="120px" height="120px">
         </a>
         <br>
         <br>
-        <br>
-        <div STYLE="position:absolute; top:350px; left:-50px; z-index:1;">
+        <br> -->
+        <!-- <div STYLE="position:absolute; top:350px; left:-50px; z-index:1;">
           <ul>
           <li><a href="./Info.html" style="color: aliceblue; font-size: 25px;">Info</a></li>
           <li><a href="./Project.html" style="color: aliceblue; font-size: 25px;">Projects</a></li>
@@ -125,63 +99,75 @@
           <li><a href="./Services.html" style="color: aliceblue; font-size: 25px;">We Do</a></li>
           <li><a href="./Contact.html" style="color: aliceblue; font-size: 25px;">Contact</a></li>
           </ul>
-        </div>
-      <br>
-        <div STYLE="position:relative; top:40px; left:0px; z-index:-1;">
-        <!-- <div STYLE="position:absolute; top:36px; left:240px; visibility:visible; z-index:2;"> -->
+        </div> -->
+      <!-- <br> -->
+        <!-- <div STYLE="position:relative; top:40px; left:0px; z-index:-1;">
         <img src="./images/PNG/LOGO-BLANCO-4M.png" alt="" id="4M" data-speed="2" class="M">
-        </div>
+        </div> -->
         
-        <div STYLE="position:absolute; top:400px; left:1840px; visibility:visible; z-index:2;">
+        <!-- <div STYLE="position:absolute; top:400px; left:1840px; visibility:visible; z-index:2;">
           <a href="https://www.facebook.com/4MdeMexico/"><img class="u-image u-image-circle u-image-4" src="./images/FACEBOOK.gif" alt="" data-image-width="309"
           data-image-height="315"></a>
           <a href="https://instagram.com/4mdemexico?utm_medium=copy_link"><img class="u-image u-image-circle u-image-5" src="./images/INSTAGRAM.gif" alt="" data-image-width="309"
           data-image-height="315"></a>
           <a href="https://api.whatsapp.com/send?phone=5214422199679&text=Me%20interesa%20saber%20mas%20sobre%20sus%20productos%20y%20servicios"><img class="u-image u-image-circle u-image-6" src="./images/WATSAP.gif" alt="" data-image-width="309"
           data-image-height="315"></a>
-        </div>
-		    <div class="align-reel-button" STYLE="position:absolute; top:850px; left:50px; z-index:12;">
+        </div> -->
+		    <!-- <div class="align-reel-button" STYLE="position:absolute; top:850px; left:50px; z-index:12;">
 		      <img  data-bs-toggle="modal" data-bs-target="#reelVideo" src="./images/PNG/FLECHA-CONTINUAR.gif" width="80px" height="80px">REEL
-		    </div>
+		    </div> -->
   
-		    <div class="modal " id="reelVideo" tabindex="-1" aria-hidden="true">
+		    <!-- <div class="modal " id="reelVideo" tabindex="-1" aria-hidden="true">
   				<div class="modal-dialog modal-xl">
 				 		<div class="modal-content reel-modal">
 							<iframe id="videoSrc"  height="720" src="https://www.youtube.com/embed/BdtHWr_nDeU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
       			</div>
   				</div> 
-				</div>
+				</div> -->
 
-        <div STYLE="position:absolute; top:-10px; left:1050px; visibility:visible; z-index:-1;">
+        <!-- <div STYLE="position:absolute; top:-10px; left:1050px; visibility:visible; z-index:-1;">
           <img id="guerrero-toggle" data-speed="2" class="hide-image" src="./images/PNG/GUERRERO-MAYA.png" alt="" >
         </div>
-        <!-- <script>
-          (function () {
-              // Add event listener
-              document.addEventListener("mousemove", parallax);
-              const elem = document.getElementById('guerrero-toggle');
-              // Magic happens here
-              function parallax(e) {
-                let _w = window.innerWidth / 2;
-                let _h = window.innerHeight / 2;
-                let _mouseX = e.clientX;
-                let _mouseY = e.clientY;
-                let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
-
-                let x = `${_depth1}`;
-                console.log(x);
-                elem.style.backgroundPosition = x;
-              }
-
-            })();
-        </script> -->
         <div STYLE="position:absolute; top:900px; left:900px; z-index:1;">
           <marquee behavior="scroll" direction="down">
             <img src="./images/PNG/001-flechas-hacia-abajo.png" width="40" height="40" alt="Flying Bee">
           </marquee>
+        </div> -->
+			<div class="section-2-container">
+				<div class="section-2-paragraph-wrapper">
+						<span class="section-2-paragraph">We are a mkt digital and publicity agency in Mexico with the aim of providing you with innovative and functional solutions.</span>
+				</div>
+				<div class="section-2-image-wrapper">
+					<img class="dragon-image" src="../4M/images/GIFS/dragonv2.gif" alt="">
+				</div>
+					<!-- <img class="dragon-image" src="../4M/images/GIFS/dragonv2.gif" alt="">
+					<div class="section-two-paragraph-wrapper">
+						<span class="section-two-paragraph">We are a mkt digital and publicity agency in Mexico with the aim of providing you with innovative and functional solutions.</span>
+					</div -->
+			</div>
+
+			<!-- Section 3 -->
+			<div class="section-3-container">
+				<h1 class="just-look-header">Just look</h1>
+				<div class="just-look-video-container" >
+        	<iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/9d8wWcJLnFI" frameborder="0" allowfullscreen></iframe>
         </div>
-    </section>
-    <section class="u-align-center u-clearfix u-image u-shading u-section-4" src="" data-image-width="256" data-image-height="256" id="sec-bc52">
+			</div>
+
+			<!-- Section 4 -->
+			<div class="section-4-container">
+				<img class="our-vision-image" src="./images/PNG/OUR.png" alt="">
+			</div>
+
+			<!-- Section 5 and footer -->
+			<div class="section-5-container">
+				<img src="./images/PNG/isologo-blanco.png" alt="" class="footer-logo">
+				<div class="footer-info-container">
+
+				</div>
+			</div>
+
+    <!-- <section class="u-align-center u-clearfix u-image u-shading u-section-4" src="" data-image-width="256" data-image-height="256" id="sec-bc52">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         
         <div STYLE="position:relative; top:-0px; left:-385px; ">
@@ -191,8 +177,8 @@
           <img src="./images/PNG/Recurso 3.png" alt="">
         </div>
       </div>
-      </section>
-      <section class="u-align-center u-clearfix u-image u-shading u-section-5" src="" data-image-width="256"
+      </section> -->
+      <!-- <section class="u-align-center u-clearfix u-image u-shading u-section-5" src="" data-image-width="256"
         data-image-height="256" id="sec-bc52">
         <div STYLE="position:absolute; top:-150px; left:850px; "><h6 class="u-text-10">Just look</h6></div>
         
@@ -203,8 +189,8 @@
         <br>
         <br>
         <br>
-        </section>
-        <section class="u-align-center u-clearfix u-image u-shading u-section-6" src="" data-image-width="256"
+        </section> -->
+        <!-- <section class="u-align-center u-clearfix u-image u-shading u-section-6" src="" data-image-width="256"
           data-image-height="256" id="sec-bc52">
         <div STYLE="position:relative; top:50px; left:-300px; ">
           <img src="./images/PNG/OUR.png" alt="">
@@ -232,8 +218,12 @@
               document.documentElement.scrollTop = 0;
             }
           </script>
-          </section>
-      <section class="u-section-7">
+          </section> -->
+
+
+
+
+      <!-- <section class="u-section-7">
       <br>
       <div style="text-align:center;"><img src="./images/PNG/isologo-blanco.png" alt="" width="400" aling="center"></div>
       <br><br><br>
@@ -241,18 +231,17 @@
         <h6 class=" u-font-montserrat" style="font-size: 25px; text-align: left; color: aliceblue;">4M de Mexico</h6>
         <h6 class=" u-font-montserrat" style="font-size: 25px; text-align: left; color: aliceblue;">Av. de la Aurora #206 <br>Int: B16 <br>Localidad: El Romeral <br>Municipio: Corregidora <br>CP:76915</h6>
         <h6 class=" u-font-montserrat" style="font-size: 25px; text-align: left; color: aliceblue;">Queretaro, Mexico</h6>
-        <!--<div STYLE="position:absolute; top:90px; left:1200px; z-index:1;">--><a class="u-text-21 u-font-montserrat"
+        <a class="u-text-21 u-font-montserrat"
           style="font-size: 25px; text-align: left; color: aliceblue;" href="https://www.google.com/maps/dir//20.541897,-100.487953/@20.541897,-100.4901417,17z" target="_blank" rel="noopener noreferrer">Get&nbsp;Directions&nbsp;→</a>
-        <!--</div>-->
+
       </div>
       <div STYLE="position:absolute; top:230px; left:750px; z-index:1;">
         <h6 class=" u-font-montserrat" style="font-size: 25px; text-align: left; color: aliceblue;">Business and Account</h6>
         <h6 class=" u-font-montserrat" style="font-size: 25px; text-align: left; color: aliceblue;">4mdemexico@gmail.com.mx
         </h6>
         <h6 class=" u-font-montserrat" style="font-size: 25px; text-align: left; color: aliceblue;">+52 12 442 219 9679</h6>
-        <!-- <div STYLE="position:absolute; top:90px; left:1200px; z-index:1;">--><a class=" u-font-montserrat"
+        <a class=" u-font-montserrat"
           style="font-size: 25px; text-align: left; color: aliceblue;" href="https://api.whatsapp.com/send?phone=5214422199679&text=Me%20interesa%20saber%20mas%20sobre%20sus%20productos%20y%20servicios">Direct&nbsp;Message&nbsp;→</a>
-        <!--</div> -->
       </div>
       <div STYLE="position:absolute; top:230px; left:1250px; z-index:1;">
         <h6 class=" u-font-montserrat" style="font-size: 25px; text-align: left; color: aliceblue;">Follow Us</h6>
@@ -272,6 +261,6 @@
       </div>
       <br>
       <br>
-      </section>
+      </section> -->
   </body>
 </html>

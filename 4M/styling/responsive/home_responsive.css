@@ -1,0 +1,187 @@
+/* Extra big monitors 4k */
+@media (min-width: 1900px) {
+	.section-2-container {
+		min-height: 700px;
+	}
+	.dragon-image {
+		width: 800px;
+	}
+
+	.section-2-paragraph-wrapper {
+		left: 50%;
+		top: 25%;
+		/* font-size: 70px; */
+		/* max-width: 30%; */
+		/* right: 20%; */
+	}
+	/* 4th section styling */
+}
+
+/* Laptop and monitors */
+@media (max-width: 1200px) {
+	.central-4m-logo {
+		height: 400px;
+		width: 400px;
+	}
+
+	/* 2nd Section Styling */
+	.section-2-container {
+		min-height: 800px;
+	}
+
+	.section-2-paragraph-wrapper {
+		font-size: 30px;
+		position: absolute;
+		right: 25px;
+		top: 15%;
+		max-width: 450px;
+		padding: 20px;
+	}
+
+	.dragon-image {
+		width: 500px;
+		/* max-width: 100%; */
+		/* height: auto; */
+	}
+
+	/* 3rd section styling */
+	.just-look-video-container {
+		position: absolute;
+		width: 90%;
+		height: 70%;
+	}
+
+	/* 4th section styling */
+	.our-vision-image {
+		padding: 0px !important;
+		/* transform: translate(-40%, -10%); */
+	}
+
+	.section-4-container {
+		/* background-position: 10% !important; */
+	}
+}
+
+/* End of laptop and monitors */
+
+/* Regular sized cellphones and tables */
+@media (max-width: 767px) {
+	/* Mobile Device */
+	.nav-image-container {
+		display: none !important;
+	}
+
+	.nav-action-container {
+		width: 100%;
+	}
+
+	.menu-toggle-image {
+		height: 90px;
+		width: 90px;
+	}
+
+	.central-logo-container {
+		display: none;
+	}
+
+	/* 2nd Section styling */
+
+	.section-2-container {
+		min-height: 550px !important;
+	}
+
+	.section-2-paragraph-wrapper {
+		font-size: 30px;
+		position: absolute;
+		right: 25px;
+		top: 15%;
+		max-width: 450px;
+		padding: 20px;
+	}
+
+	.dragon-image {
+		max-width: 100%;
+		/* height: auto; */
+	}
+
+	/* 3rd section styling */
+
+	.section-3-container {
+		min-height: 550px;
+	}
+
+	.just-look-video-container {
+		position: absolute;
+		width: 90%;
+		height: 70%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	/* 4th section styling */
+	.section-4-container {
+		background-position: 45% 0% !important;
+	}
+	.our-vision-image {
+		width: 100%;
+		padding: 15px;
+		max-width: 450px !important;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+/* Small cellphones */
+@media (max-width: 320px) {
+	.header-logo {
+		height: 30px;
+		width: 80px;
+	}
+
+	.menu-toggle-image {
+		height: 70px;
+		width: 70px;
+	}
+
+	.on-screen-navigation-item {
+		font-size: 25px;
+		font-weight: normal;
+	}
+
+	/* 2nd section styling */
+
+	.section-2-paragraph-wrapper {
+		font-size: 25px;
+		padding: 20px;
+		right: 0;
+		top: 10%;
+	}
+
+	.dragon-image {
+		width: 100%;
+		height: auto;
+	}
+
+	/* 3rd section styling */
+	.just-look-video-container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.section-4-container {
+		background-position: 30% 0% !important;
+	}
+
+	.our-vision-image {
+		width: 100%;
+		max-width: 315px !important;
+		padding: 10px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

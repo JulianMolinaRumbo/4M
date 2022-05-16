@@ -3,14 +3,293 @@
 	margin: 0;
 	padding: 0;
 }
-#parallax {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 50% 50%;
+body {
+	min-width: 250px;
 }
+
+.first-section {
+	background-size: cover;
+	background-repeat: no-repeat !important;
+	background-position: center;
+	min-height: 500px;
+	height: 100vh;
+	position: relative;
+}
+
+.header-logo {
+	position: absolute;
+	float: left;
+	left: 20px;
+	top: 20px;
+	height: 50px;
+	width: 120px;
+}
+
+/* Menu */
+
+.menu-toggle {
+	position: absolute;
+	float: right;
+	right: 20px;
+	/* top: 10px */
+}
+
+.menu-toggle,
+span {
+	cursor: pointer;
+}
+
+.menu-toggle-image {
+	height: 100px;
+	width: 100px;
+}
+
+.nav-action-container {
+	height: 100%;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+/* Central 4m logo (white) */
+.central-logo-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* On screen navigation menu */
+.on-screen-navigation-wrapper {
+	height: 100% !important;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.on-screen-navigation {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.on-screen-navigation-item {
+	text-decoration: none !important;
+	font-size: 30px;
+	font-weight: 600;
+	padding: 10px 10px;
+	color: aliceblue;
+	align-self: flex-start;
+}
+
+.on-screen-navigation-item:hover {
+	color: aliceblue;
+	font-size: 33px;
+}
+
+.on-screen-social-media {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.on-screen-social-media-item {
+	height: 90px;
+	width: 90px;
+	padding: 10px 10px;
+}
+
+/* Reel button styling */
+.align-reel-button {
+	cursor: pointer;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	left: 10px;
+	bottom: 20px;
+}
+
+.reel-button {
+	height: 40px;
+	width: 40px;
+}
+
+.reel-text {
+	font-size: 20px;
+	color: white;
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+
+/* SECTION 2 STYLES */
+
+.section-2-container {
+	position: relative;
+	background-image: url(./images/FONDOS/JUST-LOOK.jpg);
+	background-size: cover;
+	background-repeat: no-repeat !important;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.section-2-paragraph-wrapper {
+	position: absolute;
+	color: white;
+	font-size: 40px;
+	right: 25px;
+	top: 15%;
+	max-width: 650px;
+	padding: 20px;
+}
+
+.dragon-image {
+	width: 600px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/* Section 3 styling */
+
+.section-3-container{
+	height: 100vh;
+	position: relative;
+	background-image: url("./images/FONDOS/Azulestrellas.png");
+	background-size: cover;
+	background-repeat: no-repeat !important;
+	background-position: center;
+	text-align: center;
+}
+
+.just-look-header{
+	color: white;
+	margin: 0 !important;
+	padding-top: 30px;
+}
+
+.just-look-video-container{
+	position: absolute;
+	width: 60%;
+	height: 70%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+	/* 4th section styling */
+
+.section-4-container{
+	height: 100vh;
+	background-image: url("./images/FONDOS/tierra.png");
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat !important;
+	background-position: center;
+	min-height: 700px;
+}
+
+.our-vision-image{
+	padding: 25px;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	transform: translate(-40%, -30%);
+	max-width: 600px;
+}
+
+
+.section-5-container{
+	background-color: black;
+	/* height: ; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-logo{
+	width: 300px;
+}
+
+.footer-info-container{
+	display: flex;
+	flex-direction: row;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#parallax {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: 50% 50%;
+}
+
 .u-section-1 .u-sheet-1 {
 	min-height: 500px;
 }
@@ -220,7 +499,10 @@ li a:hover {
 	}
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
+	.nav-image-container{
+		display: none !important;
+	}
 	.u-section-1 .u-sheet-1 {
 		min-height: 580px;
 	}
@@ -238,7 +520,7 @@ li a:hover {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-}
+} */
 
 @media (max-width: 575px) {
 	.u-section-1 .u-sheet-1 {
@@ -304,7 +586,7 @@ body {
 }
 
 .sidenav {
-	height: 100%;
+	height: 100vh;
 	width: 0;
 	display: flex;
 	position: absolute;
@@ -327,10 +609,6 @@ body {
 	transition: 0.3s;
 }
 
-/* .align-reel-button{
-	padding: 20px;
-} */
-
 .sidenav a:hover {
 	color: #000000;
 }
@@ -349,15 +627,6 @@ body {
 	right: 25px;
 	font-size: 36px;
 	margin-right: 50px;
-}
-
-.nav-action-container {
-	height: 100%;
-	width: 30%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
 }
 
 .nav-image-container {
@@ -394,7 +663,6 @@ body {
 
 .modal-content {
 	margin: auto !important;
-	/* height: fit-content !important; */
 }
 
 .reel-modal {
