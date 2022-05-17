@@ -9,6 +9,7 @@ body {
 
 .first-section {
 	background-size: cover;
+	background-image: url("./images/1.jpg");
 	background-repeat: no-repeat !important;
 	background-position: center;
 	min-height: 500px;
@@ -132,7 +133,7 @@ span {
 
 .section-2-container {
 	position: relative;
-	background-image: url(./images/FONDOS/JUST-LOOK.jpg);
+	background-image: url(./images/FONDOS/Background/section3background.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat !important;
 	background-position: center;
@@ -164,7 +165,7 @@ span {
 .section-3-container{
 	height: 100vh;
 	position: relative;
-	background-image: url("./images/FONDOS/Azulestrellas.png");
+	background-image: url("./images/FONDOS/Background/Section2BackgroundImage.jpg");
 	background-size: cover;
 	background-repeat: no-repeat !important;
 	background-position: center;
